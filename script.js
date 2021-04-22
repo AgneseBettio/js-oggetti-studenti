@@ -11,3 +11,7 @@ var studente = {
     'eta' : 19
 }
 console.log(studente);
+// Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
+for (var key in studente){
+    console.log(key + ":", studente[key]);
+}
