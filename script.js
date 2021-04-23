@@ -64,10 +64,21 @@ var datiNuovoStudente = {
     'cognome': cognomeUtente,
     'eta': etaUtente
 };
-
 console.log(datiNuovoStudente);
+for (var key in datiNuovoStudente) {
+    console.log(key + ":", datiNuovoStudente[key]);
+}
 // aggiungo nuovo studente in array 
 arrStudenti.push(datiNuovoStudente);
 console.log (arrStudenti);
 
+
+// Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+for (var i = 0; i < arrStudenti.length; i++) {
+
+    var elementoRicerca = arrStudenti[i];
+    console.log(elementoRicerca.nome);
+    console.log(elementoRicerca.cognome);
+
+}
 
